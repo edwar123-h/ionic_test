@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'nosotros',
     loadChildren: () => import('./nosotros/nosotros.module').then( m => m.NosotrosPageModule)
   },
+  {
+    path: 'caculadora',
+    loadChildren: () => import('./caculadora/caculadora.module').then( m => m.CaculadoraPageModule)
+  },
+  {
+    path: 'calculadora',
+    loadChildren: () => import('./calculadora/calculadora.module').then( m => m.CalculadoraPageModule)
+  },
+  {
+    path: 'operation',
+    loadChildren: () => import('./operation/operation.module').then( m => m.OperationPageModule)
+  },
 ];
 
 @NgModule({
